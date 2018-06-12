@@ -43,7 +43,7 @@ void sfml1::buttonPressed()
 	{
 		for(int i = 0; i < speed; i++)
 		{
-			players[0].move("left", walls);
+			players[0].move("left", walls, speed);
 		}
 	}
 	
@@ -51,7 +51,7 @@ void sfml1::buttonPressed()
 	{
 		for(int i = 0; i < speed; i++)
 		{
-			players[0].move("right", walls);
+			players[0].move("right", walls, speed);
 		}
 	}
 	
@@ -59,7 +59,7 @@ void sfml1::buttonPressed()
 	{
 		for(int i = 0; i < speed; i++)
 		{
-			players[0].move("up", walls);
+			players[0].move("up", walls, speed);
 		}
 	}
 	
@@ -67,7 +67,7 @@ void sfml1::buttonPressed()
 	{
 		for(int i = 0; i < speed; i++)
 		{
-			players[0].move("down", walls);
+			players[0].move("down", walls, speed);
 		}
 	}
 }

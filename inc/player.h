@@ -21,7 +21,7 @@ public:
     player(sf::Vector2f charSize, sf::Color charCol, sf::Vector2f charPos, int speed, sf::Color bufCol);
     sf::RectangleShape getPlayer();
     void bufUpdate();
-    void move(std::string direction, std::vector<wall> walls);
+    void move(std::string direction, std::vector<wall> walls, int speed);
     
 };
 

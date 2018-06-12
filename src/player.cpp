@@ -33,8 +33,9 @@ void player::bufUpdate()
 	rightBuf.setPosition(character.getPosition().x + character.getSize().x, character.getPosition().y);
 }
 
-void player::move(std::string direction, std::vector<wall> walls)
+void player::move(std::string direction, std::vector<wall> walls, int speed)
 {
+    bufUpdate();
 	if(direction == "left")
 	{
 		for(int i = 0; i < walls.size(); i++)
