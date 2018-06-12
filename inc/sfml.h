@@ -4,6 +4,7 @@
 #include "common.h"
 #include "wall.h"
 #include "player.h"
+#include "enemy.h"
 
 class sfml1
 {
