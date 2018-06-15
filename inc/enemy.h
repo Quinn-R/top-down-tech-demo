@@ -7,12 +7,13 @@ class enemy: public player
 {
 private:
     
-    
+    sf::Vector2f playerPos;
+    sf::Vector2f enemyPos;
     
 public:
     
     enemy();
-    void getPlayerPos();
+    void setPlayerPos();
     void moveToPlayer();
     
     
